@@ -1,0 +1,21 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Detector de Vogais!");
+        Console.Write("Insira a letra: ");
+        string letra = Console.ReadLine();
+        string[] vogais = new string[] { "a", "e", "i", "o", "u" };
+
+        if (Array.Exists(vogais, v => v == letra))
+        {
+            Console.WriteLine($"A letra {letra} é uma vogal.");
+        }
+        else
+        {
+            Console.WriteLine($"A letra {letra} é uma consoante.");
+        }
+    }
+}

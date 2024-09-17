@@ -1,0 +1,34 @@
+using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        Random random = new Random();
+
+        Console.Write("Quantos jogos você deseja fazer? ");
+        int quantidadeJogos = int.Parse(Console.ReadLine());
+
+		Console.Write("Quantas dezenas você deseja fazer? ");
+		int quantidadeDeDezenas = int.Parse(Console.ReadLine());
+		
+        for (int j = 0; j < quantidadeJogos; j++)
+        {
+            int[] dezenas = new int[quantidadeDeDezenas];
+
+            for (int i = 0; i < quantidadeDeDezenas; i++)
+            {
+                int numero;
+                do
+                {
+                    numero = random.Next(1, 61);
+                } while (Array.Exists(dezenas, x => x == numero)); 
+
+                dezenas[i] = numero;
+            }
+
+            Array.Sort(dezenas); 
+            Console.WriteLine("Jogo " + (j + 1) + ": " + string.Join(", ", dezenas));
+        }
+    }
+}
