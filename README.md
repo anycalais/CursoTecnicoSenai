@@ -15,19 +15,19 @@
 #### Entrar na pasta
 ```cd CursoTecnicoSenai/```
 
-#### 
+#### Abrir o VS Code
 ```code .```
 
-####
+#### Verificar o status dos arquivos
 ```git status```
 
-#### Para adicionar 
+#### Para adicionar as alterações para pasta atual
 ```git add .```
 
-####
+#### Verificar o status dos arquivo se foram adicionados
 ```git status```
 
-#### 
+#### Criar um commit dos arquivos para pasta atual
 ```git commit -m "Alteração do arquivo Readme"```
 
 #### Para logar na minha conta do GitHub
